@@ -42,7 +42,6 @@ class PatentController extends AppController
 
     
         $results = $query->limit(10)->all();
-        // dd(json_encode($results));
 
         $this->set([
             'success' => true,
