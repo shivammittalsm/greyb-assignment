@@ -1,0 +1,53 @@
+{
+  "v": 9,
+  "name": "Patent",
+  "folders": [],
+  "requests": [
+    {
+      "v": "15",
+      "name": "Get patent data based on query",
+      "method": "GET",
+      "endpoint": "http://localhost:8080/api/query",
+      "params": [
+        {
+          "key": "priority_year",
+          "value": "2017",
+          "active": true,
+          "description": "Retrieve patents based on the year of their priority date"
+        },
+        {
+          "key": "assignee",
+          "value": "test",
+          "active": true,
+          "description": "Filter patent data by the name of the assignee"
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "none",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    }
+  ],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "_ref_id": "coll_me8eqoru_3ecd570f-84fc-41b7-b441-0eaf18b8bcff"
+}
