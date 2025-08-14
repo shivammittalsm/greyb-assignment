@@ -42,4 +42,4 @@ This project provides a REST API built with CakePHP for analyzing patent data re
 
 **Run database migrations**  
 
-    docker compose exec greyb_app bin/cake migrations migrate
+    docker exec greyb_app bin/cake migrations migrate
