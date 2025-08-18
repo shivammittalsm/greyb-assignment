@@ -40,6 +40,10 @@ This project provides a REST API built with CakePHP for analyzing patent data re
 
     docker compose up --build -d
 
+**Install dependencies**
+
+    docker exec -it greyb_app composer install
+
 **Run database migrations**  
 
     docker exec greyb_app bin/cake migrations migrate
