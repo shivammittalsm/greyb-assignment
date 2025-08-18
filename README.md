@@ -29,12 +29,11 @@ This project provides a REST API built with CakePHP for analyzing patent data re
 
 **Create the environment file**
 
-    ```bash
     cp config/.env.example config/.env
-    ```
+
 **Copy the database credentials**
 
-    Copy from config/app_local.example.php to config/app_local.php
+    cp config/app_local.example.php config/app_local.php
 
 **Build and run the container**
 
@@ -47,3 +46,7 @@ This project provides a REST API built with CakePHP for analyzing patent data re
 **Run database migrations**  
 
     docker exec greyb_app bin/cake migrations migrate
+
+**Seed database**
+    
+    docker exec greyb_app bin/cake migrations seed
